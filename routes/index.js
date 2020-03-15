@@ -43,7 +43,7 @@ function callSendAPI(sender_psid, response) {
   options = {
     hostname: 'graph.facebook.com',
     port: 443,
-    path: '/v6.0/me/messages?access_token='+process.env.PAGE_ACCESS_TOKEN,
+    path: '/v6.0/me/messages?access_token='+ PAGE_ACCESS_TOKEN,
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -55,6 +55,7 @@ function callSendAPI(sender_psid, response) {
     console.log(`statusCode: ${res.statusCode}`)
 
     res.on('data', d => {
+      console.log(d)
       process.stdout.write(d)
     })
   })
@@ -65,7 +66,7 @@ function callSendAPI(sender_psid, response) {
 
   yolo.write(data)
   yolo.end()
-  
+
 }
 
 
