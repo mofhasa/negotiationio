@@ -43,7 +43,7 @@ function callSendAPI(sender_psid, response) {
   options = {
     hostname: 'graph.facebook.com',
     port: 443,
-    path: '/v6.0/me/messages?access_token='+ PAGE_ACCESS_TOKEN,
+    path: '/v6.0/me/messages?access_token=EAADBEn1YIlIBADFZAjAZCof9vX3EMtDSxaZBnHOsvPTS0tDSdmfHuHIuN2K3SkBmmhdZCnvqZCDE9BU9Jq5Dx6ZC0MoRGlyiMEKlyR9ZCVhFoqq3fMcFZA7y5ZA352rZCaohTGfZA3b7VvL023N3rOvpMTxVWKDotcnmLrOGed47hhNfQZDZD',
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
